@@ -3,7 +3,7 @@ import Form from "../components/Form"
 
 export default function AddApllication(props){
     return(
-        <div>
+        <div className="AddApp">
             <Header name = {props.name}/>
             <Form />
         </div>

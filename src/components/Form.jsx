@@ -67,21 +67,22 @@ export default function Form(){
             <div className="card">
             <h4 className="card-title">Comments/Cover Letter</h4>
             <div className="sub-card">
-            <input className="card-input" type="text" placeholder="Comments/Cover Letter"></input>
+            <input className="card-input" type="textarea" placeholder="Comments/Cover Letter"></input>
             </div>
             </div>
             <div className="card">
             <div className="sub-card">
-            <label className="switch">Add to calendar
-                <input type="checkbox" />
-                <span className="slider round"></span>
-            </label>
+                <label className="label-input">Add to calendar</label>
+                <label className="switch">
+                <   input className="switch-input" type="checkbox" />
+                    <span className="slider round"></span>
+                </label>
             </div>
             </div>
             <div className="card">
-            <h4 className="card-title">Set alarm</h4>
             <div className="sub-card">
-                    <input className="card-input" type="radio" id="alarm"></input>
+                    <input className="radio-input" type="radio" id="alarm"></input>
+                    <label className="label-input">Set alarm</label>
                     </div> 
             </div>
         </form>

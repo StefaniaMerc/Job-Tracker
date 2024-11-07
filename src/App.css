@@ -78,28 +78,33 @@ ul {
   list-style: none;
 }
 
+.AddApp{
+  background-color: white;
+}
+
 /* The switch - the box around the slider */
 .switch {
+  
+  margin-right: 0;
   position: relative;
   display: inline-block;
   width: 48px;
-  height: 24px;
+  height: 25px;
 }
 
 /* Hide default HTML checkbox */
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+  display: none;
 }
 
 /* The slider */
 .slider {
-  position: absolute;
+  position:absolute;
   cursor: pointer;
+  display: inline-block;
   top: 0;
-  left: 0;
-  right: 0;
+  left: 100px;
+  right: -100px;
   bottom: 0;
   background-color: #ccc;
   -webkit-transition: .4s;
@@ -123,7 +128,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px darkgoldenrod;
 }
 
 input:checked + .slider:before {
@@ -196,7 +201,6 @@ input:checked + .slider:before {
     max-width: 320px;
     position: absolute;
     top: 0;
-    /* left:25px; */
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -234,7 +238,6 @@ input:checked + .slider:before {
 .mob-menu li {
 
   Width:270px;
-  /* Height:240px; */
   Top:221px;
   Left:21px; 
   font-size: 17px;
@@ -275,14 +278,10 @@ hr.solid {
   margin-left: 50%;
   margin-right: 50%;
   background-color: #bfe1e1;
-  height: 333px;
+  height: fit-content;
   max-height: 620px;
   width: 100%;
   max-width: 400px;
-  /* position: absolute;
-  top: 0; */
-  /* left:25px; */
-  /* margin-top: 100px; */
   display: flex;
   flex-direction: column;
   justify-content:left;
@@ -290,8 +289,6 @@ hr.solid {
   text-align: left;
   font-size: 13px;
   border-radius: 12px;
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
 }
 
 .card-title{
@@ -307,7 +304,9 @@ hr.solid {
 
 .sub-card{
   background-color: white;
-  height: 239px;
+  height: fit-content;
+  margin-top: 5px;
+  margin-bottom: 5px;
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 12px;
@@ -320,11 +319,6 @@ hr.solid {
   margin-top: 5px;
   margin-left: 5px;
   Width:270px;
-  /* Top:188px;
-  Left:21px; */
-  /* Height:240px; */
-  /* Top:221px;
-  Left:21px;  */
   font-size: 17px;
   padding-top: 12px;
   padding-left: 18px;
@@ -337,8 +331,6 @@ hr.solid {
   list-style: none;
   margin-top: 40px;
   margin-left: 20px;
-  /* Width:270px;
-  Height:370px; */
   Top:188px;
   Left:21px;
 
@@ -354,19 +346,13 @@ hr.solid {
   float: right;
   display: block;
   margin-right: 50%;
-  /* margin-top: 20px; */
 }
 
 .label-input{
-  /* margin-top: 20px;
-  margin-left: 5px;
-  margin-bottom: 10px; */
   font-size: 17px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  /* position: absolute; */
-
 }
 
 .des-footer{

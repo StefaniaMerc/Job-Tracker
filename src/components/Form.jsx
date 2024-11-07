@@ -1,54 +1,88 @@
 export default function Form(){
     return(
-        <form className="application-formm">
+        <form className="application-form">
             <div className="card">
                 <h4 className="card-title">Informations</h4>
-                <input className="card-input" type="text" placeholder="Company name"></input>
-                <input className="card-input" type="text" placeholder="Position"></input>
-                <input className="card-input" type="text" placeholder="Country"></input>
-                <input className="card-input" type="date" placeholder="Date"></input>
-                <input className="card-input" type="number" placeholder="Pound £"></input>
+                <div className="sub-card">
+                    <input className="card-input" type="text" placeholder="Company name"></input>
+                    <input className="card-input" type="text" placeholder="Position"></input>
+                    <input className="card-input" type="text" placeholder="Country"></input>
+                    <input className="card-input" type="date" placeholder="Date"></input>
+                    <input className="card-input" type="number" placeholder="Pound £"></input>
+                </div>
             </div>
             <div className="card">
                 <h4 className="card-title">Experience</h4>
-                    
-                    <input className="card-input" type="radio" id="volunteer"></input>
-                    <label for="volunteer">Volunteer</label><br></br>
-                    
-                    <input className="card-input" type="radio" id="Intern"></input>
-                    <label for="Intern">Intern</label><br></br>
-                    
-                    <input className="card-input" type="radio" id="junior" ></input>
-                    <label for="junior">Junior</label><br></br>
-                    
-                    <input className="card-input" type="radio" id="mid"></input>
-                    <label for="mid">Mid</label><br></br>
-                    
-                    <input className="card-input" type="radio" id="senior"></input>
-                    <label for="senior">Senior</label><br></br>
-                    
-                
+                <div className="sub-card">
+                    <ul className="radio-inputs">
+                    <li><input className="radio-input" type="radio" id="volunteer"></input>
+                    <label className="label-input" for="volunteer">Volunteer</label></li>
+                    <li><input className="radio-input" type="radio" id="Intern"></input>
+                    <label className="label-input" for="Intern">Intern</label></li>
+                    <li><input className="radio-input" type="radio" id="junior" ></input>
+                    <label className="label-input" for="junior">Junior</label></li>
+                    <li><input className="radio-input" type="radio" id="mid"></input>
+                    <label className="label-input" for="mid">Mid</label></li>
+                    <li><input className="radio-input" type="radio" id="senior"></input>
+                    <label className="label-input" for="senior">Senior</label></li>
+                    </ul>
+                </div>
             </div>
             <div className="card">
-                
+            <h4 className="card-title">Status</h4>
+            <div className="sub-card">
+            <ul className="radio-inputs">
+                    <li><input className="radio-input" type="radio" id="applied"></input>
+                    <label className="label-input" for="applied">Applied</label></li>
+                    <li><input className="radio-input" type="radio" id="interview"></input>
+                    <label className="label-input" for="interview">Interview</label></li>
+                    <li><input className="radio-input" type="radio" id="reject" ></input>
+                    <label className="label-input" for="reject">Rejected</label></li>
+                    <li><input className="radio-input" type="radio" id="offer"></input>
+                    <label className="label-input" for="offer">Offer</label></li>
+                    <li><input className="radio-input" type="radio" id="hired"></input>
+                    <label className="label-input" for="hired">Hired</label></li>
+                </ul>
+                </div>
             </div>
             <div className="card">
-                
+            <h4 className="card-title">Interview</h4>
+            <div className="sub-card">
+                <input className="card-input" type="text" placeholder="Place: Birmingham"></input>
+                <input className="card-input" type="datetime-local"></input>
+                <input className="card-input" type="link"></input>
+                </div>                
             </div>
             <div className="card">
-                
+            <h4 className="card-title">Interview results</h4>
+                <div className="sub-card">
+                <ul className="radio-inputs">
+                    <li><input className="radio-input" type="radio" id="success"></input>
+                    <label className="label-input" for="success">Successful</label></li>
+                    <li><input className="radio-input" type="radio" id="rej"></input>
+                    <label className="label-input" for="rej">Unsuccessful</label></li>
+                    </ul>
+                </div> 
             </div>
             <div className="card">
-                
+            <h4 className="card-title">Comments/Cover Letter</h4>
+            <div className="sub-card">
+            <input className="card-input" type="text" placeholder="Comments/Cover Letter"></input>
+            </div>
             </div>
             <div className="card">
-                
+            <div className="sub-card">
+            <label className="switch">Add to calendar
+                <input type="checkbox" />
+                <span className="slider round"></span>
+            </label>
+            </div>
             </div>
             <div className="card">
-                
-            </div>
-            <div className="card">
-                
+            <h4 className="card-title">Set alarm</h4>
+            <div className="sub-card">
+                    <input className="card-input" type="radio" id="alarm"></input>
+                    </div> 
             </div>
         </form>
     )

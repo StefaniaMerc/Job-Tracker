@@ -15,6 +15,7 @@ button:hover{
 
 form{
   font-family: "Roboto", sans-serif;
+  margin-top: 100px;
 }
 
 .header {
@@ -75,6 +76,69 @@ ul {
 
 .footer-links ul{
   list-style: none;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: darkgoldenrod;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 
@@ -144,7 +208,7 @@ ul {
     transform: translateX(-50%);
   }
 
-  .mob-menu-title{
+  .mob-menu-title, .card-titel{
     Width:270px;
     Left:21px;
     margin-left: 21px;
@@ -195,6 +259,113 @@ hr.solid {
   border-top: 3px solid #bfe1e1;
   margin-top: 0;
   margin-left: 18px;
+
+}
+
+.application-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 50%;
+  margin-right: 50%;
+  background-color: #bfe1e1;
+  height: 333px;
+  max-height: 620px;
+  width: 100%;
+  max-width: 400px;
+  /* position: absolute;
+  top: 0; */
+  /* left:25px; */
+  /* margin-top: 100px; */
+  display: flex;
+  flex-direction: column;
+  justify-content:left;
+  align-items: left;
+  text-align: left;
+  font-size: 13px;
+  border-radius: 12px;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+}
+
+.card-title{
+  Width:200px;
+  Left:21px;
+  margin-left: 21px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  padding-bottom: 12px;
+}
+
+.sub-card{
+  background-color: white;
+  height: 239px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 12px;
+}
+
+.card-input{
+  border-radius: 12px;
+  border-color: transparent;
+  background-color: white;
+  margin-top: 5px;
+  margin-left: 5px;
+  Width:270px;
+  /* Top:188px;
+  Left:21px; */
+  /* Height:240px; */
+  /* Top:221px;
+  Left:21px;  */
+  font-size: 17px;
+  padding-top: 12px;
+  padding-left: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.radio-inputs{
+  list-style: none;
+  margin-top: 40px;
+  margin-left: 20px;
+  /* Width:270px;
+  Height:370px; */
+  Top:188px;
+  Left:21px;
+
+}
+
+.radio-inputs li{
+  padding-top: 5px;
+  padding-left: 18px;
+
+}
+
+.radio-input{
+  float: right;
+  display: block;
+  margin-right: 50%;
+  /* margin-top: 20px; */
+}
+
+.label-input{
+  /* margin-top: 20px;
+  margin-left: 5px;
+  margin-bottom: 10px; */
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* position: absolute; */
 
 }
 

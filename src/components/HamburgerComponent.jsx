@@ -1,6 +1,8 @@
 import Hamburger from "hamburger-react";
 import { useState } from "react";
 import { CSSTransition } from "react-transition-group";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Menu from "./Menu";
 
 'use client';
 
@@ -14,17 +16,7 @@ export default function HamburgerComponent(){
             {open && <div className="mob-menu">
                 <h4 className="mob-menu-title">Menu</h4>
                 <div><hr className="menu-solid"/></div>
-                <ul>
-                    <li>Add application</li>
-                    <div><hr className="solid"/></div>
-                    <li>Recent application</li>
-                    <div><hr className="solid"/></div>
-                    <li>Calendar</li>
-                    <div><hr className="solid"/></div>
-                    <li>Statistics</li>
-                    <div><hr className="solid"/></div>
-                    <li>Archive</li>
-                </ul>
+                <Menu/>
             </div>}
         </div>
         )

@@ -1,21 +1,17 @@
 import { useState } from "react";
 import Breadcrumb from "./Breadcrumb"
 import HamburgerComponent from "./HamburgerComponent";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Menu from "./Menu";
 
 
 export default function Header(props){
     
     return(
         <header className="header">
-            <h3 className="headerTitle">Job Tracker</h3>
+            <h3 className="headerTitle"><Link  className="link" to="/Home">Job Tracker</Link></h3>
             <nav className="menu">
-                <ul>
-                    <li>Add application</li>
-                    <li>Recent application</li>
-                    <li>Calendar</li>
-                    <li>Statistics</li>
-                    <li>Archive</li>
-                </ul>
+                <Menu />
             </nav>
             <div className="burger">
                 <HamburgerComponent />

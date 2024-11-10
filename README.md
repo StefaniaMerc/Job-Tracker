@@ -12,7 +12,7 @@ Node.js and npm (or yarn) installed
 1. *Clone the repository*: https://github.com/StefaniaMerc/Job-Tracker.git
 
 2. Navigate to the project directory:
-   cd your-repo-name
+   '''cd your-repo-name'''
 
 3. Install dependencies:
    npm install

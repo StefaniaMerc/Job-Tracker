@@ -11,24 +11,21 @@ Node.js and npm (or yarn) installed
 Clone the repository:
 
 Bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/StefaniaMerc/Job-Tracker.git
 
 Navigate to the project directory:
 
 ![image](https://github.com/user-attachments/assets/a901d992-9ea1-44af-8a10-d3dbff189a74)
 
-
-
 Install dependencies:
 
 Bash
-npm install
-
+![image](https://github.com/user-attachments/assets/a14d9acf-30f2-403c-a4f7-824a7d0da633)
 
 Running the app
 
 Bash
-npm start
+![image](https://github.com/user-attachments/assets/f6815a74-a2cb-4562-81a5-cd302748cb9e)
 
 This will start a development server and open your default browser.
 

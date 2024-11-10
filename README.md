@@ -15,8 +15,8 @@ git clone https://github.com/your-username/your-repo-name.git
 
 Navigate to the project directory:
 
+![image](https://github.com/user-attachments/assets/a901d992-9ea1-44af-8a10-d3dbff189a74)
 
-cd your-repo-name
 
 
 Install dependencies:

@@ -18,7 +18,7 @@ Mobile UX/UI Design by Francesca Bartalini
 
 **Getting Started**
 Prerequisites
-Node.js and npm (or yarn) installed
+Node.js and npm installed
 
 **Installation**
 

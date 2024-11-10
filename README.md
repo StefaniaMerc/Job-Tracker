@@ -12,13 +12,16 @@ Node.js and npm (or yarn) installed
 1. *Clone the repository*: https://github.com/StefaniaMerc/Job-Tracker.git
 
 2. Navigate to the project directory:
+   
    ```cd your-repo-name```
 
 3. Install dependencies:
-   npm install
+   
+   ```npm install```
    
 4. Running the app
-   npm start
+   
+   ```npm start```
 
 This will start a development server and open your default browser.
 

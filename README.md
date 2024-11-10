@@ -3,11 +3,17 @@ The application (work in progress!) will help the users to keep track of their j
 
 Mobile UX/UI Design by Francesca Bartalini
 
-Home: ![image](https://github.com/user-attachments/assets/612f97aa-25fa-4448-8a87-2cdac94dbc78)
+*Home:*
 
-Menu: ![image](https://github.com/user-attachments/assets/de263e35-8b69-4e5d-b2c3-adf58e5b48df)
+![image](https://github.com/user-attachments/assets/612f97aa-25fa-4448-8a87-2cdac94dbc78)
 
-Application form: ![image](https://github.com/user-attachments/assets/ad5956e9-0f99-4eeb-bce7-b9042e57a1f5)
+*Menu:*
+
+![image](https://github.com/user-attachments/assets/de263e35-8b69-4e5d-b2c3-adf58e5b48df)
+
+*Application form:*
+
+![image](https://github.com/user-attachments/assets/ad5956e9-0f99-4eeb-bce7-b9042e57a1f5)
 ![image](https://github.com/user-attachments/assets/3fc5bb52-ad4d-4adf-b8ab-6ecdc5382aa1)
 
 **Getting Started**

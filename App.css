@@ -1,0 +1,504 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Rubik Mono One", monospace;
+  background: white;
+}
+
+button{
+  background-color: transparent;
+  padding: 0;
+  width: 100px; height: 50px;
+}
+
+button:hover{
+  border-color: #bfe1e1;
+}
+
+form{
+  font-family: "Roboto", sans-serif;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: grid;
+  grid-template: 70px 30px/auto auto;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  
+}
+
+.link{
+  color: #252525;
+}
+
+.breadcrumb {
+  font-family: Arial, Helvetica, sans-serif;
+  /* Added margin-top for spacing */
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.menu{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-right: 20px;
+  
+}
+
+
+
+.menu li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: lighter;
+}
+
+.card, .alarmCal-card{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  height: fit-content;
+  background-color: #bfe1e1;
+}
+
+.card-title{
+  margin-left: 5px;
+}
+
+.card-input, .alarmCasub-card{
+  border-radius: 12px;
+  border-color: transparent;
+  background-color: white;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  Width:270px;
+  font-size: 17px;
+  padding-top: 12px;
+  padding-left: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+input[type=radio]{
+  float: right;
+  /* -webkit-appearance: none;
+  appearance: none; */
+  /* For iOS < 15 to remove gradient background */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: lightgrey;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid lightgrey;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+  margin-right: 50px;
+  }
+
+  input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
+
+  input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #bfe1e1;    
+  }
+
+  input[type="radio"]:focus {
+    outline: max(2px, 0.15em) solid darkgoldenrod;
+    outline-offset: max(2px, 0.15em);
+  }
+
+
+input[type=radio]:checked::after{
+  background-color: darkgoldenrod;
+}
+
+.radio-inputs{
+  list-style: none;
+}
+
+.label-input{
+  margin-left: 10px;
+}
+
+.footer-links ul{
+  list-style: none;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  
+  margin-right: 0;
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  display: none;
+}
+
+/* The slider */
+.slider {
+  position:absolute;
+  cursor: pointer;
+  display: inline-block;
+  top: 0;
+  left: 100px;
+  right: -100px;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: darkgoldenrod;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px darkgoldenrod;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+@media( min-width:768px){
+  body{
+    background-color: white;
+  }
+
+  hr{
+    display: none;
+  }
+
+  .burger{
+    display: none;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+  }
+
+  .mob-footer{
+    display: none;
+  }
+}
+
+.des-footer{
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+.footer-links li{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+
+@media( max-width:767px){
+  
+  body{
+    background-image: url("background--img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .mob-menu{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #bfe1e1;
+    height: 100vh;
+    max-height: 620px;
+    width: 100%;
+    max-width: 320px;
+    position: absolute;
+    top: 0;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items: left;
+    text-align: left;
+    font-size: 13px;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+
+  .mob-menu-title, .card-title{
+    Width:270px;
+    Left:21px;
+    margin-left: 21px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    padding-bottom: 12px;
+  }
+
+.mob-menu ul{
+  list-style: none;
+  border-radius: 12px;
+  background-color: white;
+  margin-top: 40px;
+  margin-left: 20px;
+  Width:270px;
+  Height:370px;
+  Top:188px;
+  Left:21px;
+}
+
+.mob-menu li {
+
+  Width:270px;
+  Top:221px;
+  Left:21px; 
+  font-size: 17px;
+  height: 48px;
+  padding-top: 12px;
+  padding-left: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  gap: 12px;
+ 
+}
+
+hr.menu-solid{
+  Width:256px;
+  Top:112px;
+  Left:36px;
+  border-top: 2px solid #252525;
+}
+
+hr.solid {
+  border-top: 3px solid #bfe1e1;
+  margin-top: 0;
+  margin-left: 18px;
+
+}
+
+.application-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 50%;
+  margin-right: 50%;
+  background-color: #bfe1e1;
+  height: fit-content;
+  max-height: 620px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content:left;
+  align-items: left;
+  text-align: left;
+  font-size: 13px;
+  border-radius: 12px;
+}
+
+.alarmCal-card{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 50%;
+  margin-right: 50%;
+  background-color: #bfe1e1;
+  height: 50px;
+  max-height: 620px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content:left;
+  align-items: left;
+  text-align: left;
+  font-size: 13px;
+  border-radius: 12px;
+
+}
+
+.card-title{
+  Width:200px;
+  Left:21px;
+  margin-left: 21px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  padding-bottom: 12px;
+}
+
+.sub-card{
+  background-color: white;
+  height: fit-content;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 12px;
+}
+
+.alarmCasub-card{
+  background-color: white;
+  height: 45px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 12px;
+}
+
+.card-input{
+  border-radius: 12px;
+  border-color: transparent;
+  background-color: white;
+  margin-top: 5px;
+  margin-left: 5px;
+  Width:270px;
+  font-size: 17px;
+  padding-top: 12px;
+  padding-left: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.radio-inputs{
+  list-style: none;
+  margin-top: 40px;
+  margin-left: 20px;
+  Top:188px;
+  Left:21px;
+}
+
+.radio-inputs li{
+  padding-top: 5px;
+  padding-left: 18px;
+
+}
+
+.radio-input{
+  float: right;
+  display: block;
+  margin-right: 50%;
+  margin-top: 5px;
+}
+
+.label-input{
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.1;
+  margin-left: 5px;
+  margin-top: 5px;
+  /* display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em; */
+}
+
+.des-footer{
+  display: none;
+}
+
+.mob-footer{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+}

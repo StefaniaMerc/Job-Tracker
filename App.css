@@ -5,7 +5,7 @@
 }
 
 body{
-  font-family: "Rubik Mono One", monospace;
+  font-family: "Roboto", sans-serif;
   background: white;
 }
 
@@ -17,12 +17,13 @@ button{
 
 button:hover{
   border-color: #bfe1e1;
+  background-color: #bfe1e1;
 }
 
 form{
   font-family: "Roboto", sans-serif;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 .header {
@@ -41,6 +42,7 @@ form{
   display: flex;
   align-items: center;
   margin-left: 10px;
+  font-family: "Rubik Mono One", monospace;
   
 }
 
@@ -49,7 +51,7 @@ form{
 }
 
 .breadcrumb {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   /* Added margin-top for spacing */
   margin-top: 5px;
   margin-left: 10px;
@@ -63,46 +65,11 @@ form{
   
 }
 
-
-
 .menu li {
   list-style: none;
   display: inline-block;
   margin-left: 10px;
   font-weight: lighter;
-}
-
-.card, .alarmCal-card{
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
-  margin-left: 30px;
-  margin-bottom: 30px;
-  border-radius: 12px;
-  height: fit-content;
-  background-color: #bfe1e1;
-}
-
-.card-title{
-  margin-left: 5px;
-}
-
-.card-input, .alarmCasub-card{
-  border-radius: 12px;
-  border-color: transparent;
-  background-color: white;
-  margin-top: 5px;
-  margin-left: 5px;
-  margin-bottom: 10px;
-  margin-right: 5px;
-  Width:270px;
-  font-size: 17px;
-  padding-top: 12px;
-  padding-left: 18px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 
@@ -124,6 +91,7 @@ input[type=radio]{
   display: grid;
   place-content: center;
   margin-right: 50px;
+  margin-left: 50px;
   }
 
   input[type="radio"]:checked::before {
@@ -158,6 +126,7 @@ input[type=radio]:checked::after{
   margin-left: 10px;
 }
 
+
 .footer-links ul{
   list-style: none;
 }
@@ -184,8 +153,8 @@ input[type=radio]:checked::after{
   cursor: pointer;
   display: inline-block;
   top: 0;
-  left: 100px;
-  right: -100px;
+  left: 50px;
+  right: -50px;
   bottom: 0;
   background-color: #ccc;
   -webkit-transition: .4s;
@@ -220,11 +189,19 @@ input:checked + .slider:before {
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+  border-radius: 30px;
 }
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.form-button{
+  border: #252525 thin solid;
+}
+
+.form-button :hover{
+  background-color: #bfe1e1;
 }
 
 
@@ -247,6 +224,123 @@ input:checked + .slider:before {
     display: flex;
     justify-content: left;
   }
+
+  .card, .alarmCal-card{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    /* display: flex;
+    flex-direction: column; */
+    align-items: left;
+    justify-content: left;
+    margin-left: 30px; 
+    margin-right: -50%;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    height: fit-content;
+    background-color: #bfe1e1;
+  }
+  
+  .application-cards{
+    font-family: "Roboto", sans-serif;
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+  
+  .application-card{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    /* display: flex;
+    flex-direction: column; */
+    align-items: left;
+    justify-content: left;
+    margin-left: 30px; 
+    margin-right: -50%;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    height: fit-content;
+    background-color: #bfe1e1;
+  
+  }
+  
+  .card-title{
+    margin-left: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+  }
+  
+  .card-input, .alarmCasub-card{
+    float: left;
+    border-radius: 12px;
+    border-color: transparent;
+    background-color: white;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    width:270px;
+    font-size: 17px;
+    padding-top: 12px;
+    padding-left: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .application-input{
+    float: left;
+    border-radius: 12px;
+    border-color: transparent;
+    background-color: white;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    width:270px;
+    font-size: 17px;
+    padding-top: 12px;
+    padding-left: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+  }
+  
+  .application-input:hover{
+    border: #252525 thin solid;
+  }
+
+  .form-label{
+    margin-left: 30px;
+    width:270px;
+    white-space: nowrap;
+  }
+
+  .form-btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left:30px;
+    margin-right: 0;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    height: fit-content;
+  }
+
+  .application-btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    height: fit-content;
+    left: 0;
+    right: 0;
+    margin-left:30px;
+    margin-right: 0;
+  }
+  
 
   .mob-footer{
     display: none;
@@ -286,7 +380,7 @@ input:checked + .slider:before {
   }
 
   .mob-menu{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: #bfe1e1;
     height: 100vh;
     max-height: 620px;
@@ -366,6 +460,12 @@ hr.solid {
   justify-content: center;
 }
 
+.application-cards{
+  margin-top: 100px;
+  margin-bottom: 150px;
+
+}
+
 .card{
   margin-top: 10px;
   margin-bottom: 20px;
@@ -383,6 +483,26 @@ hr.solid {
   text-align: left;
   font-size: 13px;
   border-radius: 12px;
+}
+
+.application-card{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #bfe1e1;
+  height: fit-content;
+  max-height: 620px;
+  width: 100%;
+  max-width: 767px;
+  display: flex;
+  flex-direction: column;
+  justify-content:left;
+  align-items: left;
+  text-align: left;
+  font-size: 13px;
+  border-radius: 12px;
+
 }
 
 .alarmCal-card{
@@ -424,6 +544,17 @@ hr.solid {
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 12px;
+  width: fit-content;
+}
+
+.form-label{
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .alarmCasub-card{
@@ -441,7 +572,7 @@ hr.solid {
   border-color: transparent;
   background-color: white;
   margin-top: 5px;
-  margin-left: 5px;
+  margin-left: 10px;
   Width:270px;
   font-size: 17px;
   padding-top: 12px;
@@ -450,6 +581,33 @@ hr.solid {
   font-weight: 400;
   font-style: normal;
 }
+
+.application-input{
+  border-radius: 12px;
+  border: #bfe1e1 thin solid;
+  background-color: white;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  Width:270px;
+  font-size: 17px;
+  padding-top: 12px;
+  padding-left: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.card-input:hover{
+  border: thin solid;
+}
+
+.application-input:hover{
+  background-color: #bfe1e1;
+}
+
 
 .radio-inputs{
   list-style: none;
@@ -480,9 +638,41 @@ hr.solid {
   line-height: 1.1;
   margin-left: 5px;
   margin-top: 5px;
-  /* display: grid;
-  grid-template-columns: 1em auto;
-  gap: 0.5em; */
+}
+
+.form-btns{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  bottom: 68px;
+  height: 68px;
+  width: 100%;
+  right: 0;
+}
+
+.application-btns{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  bottom: 68px;
+  height: 68px;
+  width: 100%;
+  right: 0;
+}
+
+.form-button{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.form-button:hover{
+  background-color: #bfe1e1;
 }
 
 .des-footer{

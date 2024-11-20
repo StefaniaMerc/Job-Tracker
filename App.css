@@ -457,6 +457,11 @@ input:checked + .slider:before {
   text-align: center;
   font: inherit;
   font-size: 0.833em;
+  height: 100px;
+}
+
+.react-calendar__tile--now {
+  background: #E5A560;
 }
 
 

@@ -4,9 +4,11 @@ The application (work in progress!) will help the users to keep track of their j
 Mobile UX/UI Design by Francesca Bartalini
 
 Desktop:
+
 ![](desktop.gif)
 
 Mobile:
+
 ![](mobile.gif)
 
 **Getting Started**
